@@ -1,16 +1,91 @@
-# React + Vite
+# Aevyron
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Personal Intelligence AI
 
-Currently, two official plugins are available:
+Aevyron is a personal AI workspace designed to understand conversations, remember useful information, work with private knowledge, search the web when needed, and surface useful personal intelligence over time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Instead of being only a question-and-answer chatbot, Aevyron is designed around persistent context and personal intelligence.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Core Capabilities
 
-## Expanding the ESLint configuration
+### 🤖 AI Workspace
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A conversational AI workspace for asking questions, brainstorming, learning, analyzing information, and working through ongoing tasks.
+
+### 🧠 Personal Memory
+
+Aevyron can maintain user-specific memories across conversations.
+
+Memory supports:
+
+- Automatic memory extraction
+- Explicit "remember this" commands
+- Explicit "forget this" commands
+- Duplicate prevention
+- Memory updates
+- Relevant memory retrieval
+- User-scoped storage
+
+### 🔎 Web Search
+
+Aevyron can use live web retrieval when current or changing information is relevant.
+
+Retrieval can be controlled through:
+
+- Auto
+- Web
+- Knowledge
+- Web + Knowledge
+- None
+
+### 📚 Knowledge Hub
+
+Users can upload private documents and use them as a personal knowledge source.
+
+Supported formats include:
+
+- PDF
+- DOCX
+- TXT
+- Markdown
+
+Knowledge files are stored privately and indexed for retrieval.
+
+### 💡 Personal Intelligence
+
+Aevyron can identify useful patterns related to:
+
+- Goals
+- Interests
+- Preferences
+- Behaviour
+- Repeated patterns
+
+These observations can be used as supporting context rather than absolute facts.
+
+### ⚡ Proactive Intelligence
+
+When relevant, Aevyron can surface useful context without requiring the user to explicitly mention it first.
+
+The system is designed to avoid turning every response into a recommendation.
+
+### 🎯 Intelligence Actions
+
+When a known goal, project, blocker, or unfinished direction is clearly relevant, Aevyron can suggest one concrete next step.
+
+Actions remain optional and are based on available context.
+
+### 💬 Conversation Continuity
+
+Aevyron maintains context across conversations using a hierarchy of information:
+
+```text
+Current Conversation
+        ↓
+Saved Memories
+        ↓
+Retrieved Knowledge / Web Evidence
+        ↓
+Older Conversations
